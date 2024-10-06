@@ -9,6 +9,7 @@ import {
     ScrollRestoration,
 } from "react-router-dom";
 import Character from "./pages/Character/Character";
+import Add from "./pages/Add/Add";
 
 const Root = () => {
     return (
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
             {
                 path: "/character/:characterId",
                 element: <Character />,
+            },
+            {
+                path: "/add",
+                element: <Add />
             }
         ],
     },
